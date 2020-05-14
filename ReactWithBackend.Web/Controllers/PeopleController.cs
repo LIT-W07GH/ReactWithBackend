@@ -32,7 +32,6 @@ namespace ReactWithBackend.Web.Controllers
         [Route("add")]
         public void Add(Person person)
         {
-            Thread.Sleep(1000);
             var repo = new PersonRepository(_connectionString);
             repo.Add(person);
         }
